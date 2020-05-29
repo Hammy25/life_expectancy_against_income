@@ -194,7 +194,8 @@ $(document).ready( function () {
 						"Continent: " + continent + "<br>"
 						+"Country: " + d.country + "<br>"
 						+"Population: " + d.population + "<br>"
-						+"Life Expentancy: " + d.life_exp
+						+"Life Expentancy: " + d.life_exp + "<br>"
+						+ "GDP per Capita: " + "$" + d.income
 						)
 							.style("left", (d3.event.pageX + 20)+ "px")
 							.style("top", (d3.event.pageY) + "px")
