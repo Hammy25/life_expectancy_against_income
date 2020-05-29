@@ -1,0 +1,42 @@
+#chart-area svg {
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#logo {
+	height:50px;
+}
+
+.navbar-brand {
+	height: 60px;
+	padding: 5px 0px;
+}
+
+#tooltip{
+	position: absolute;
+   	height: auto;
+   	width: auto;
+  	padding: 10px 10px;
+  	background-color: rgba(50,111,168,0.8);
+  	border-radius: 8px;
+}
+
+#play-pause-controls{
+	text-align: center;
+}
+.play-pause{
+	border-radius: 50%;
+}
+#play-pause-controls,#continent-control{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+#year-range{
+	display: inline;
+	width: 90%;
+}
+#range-value{
+	text-align: center;
+}
