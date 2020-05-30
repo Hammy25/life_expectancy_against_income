@@ -40,10 +40,12 @@ $(document).ready( function () {
 					.attr("style", "visibility: hidden");
 
 	var canvas = d3.select("#chart-area").append("svg")
+										 .attr("id", "svgarea")
 										 .attr("height", svgHeight)
 										 .attr("width", svgWidth);
 
 	var chart = canvas.append("g")
+					  .attr("id", "plot")
 					  .attr("transform", "translate("+ margin.left + ", " + margin.top + ")");
 
 
@@ -60,7 +62,7 @@ $(document).ready( function () {
 				         .attr("x",0 - ((svgHeight-margin.top-margin.bottom) / 2))
 				         .attr("dy", "1em")
 				         .style("text-anchor", "middle")
-				         .text("Life Expentancy (yrs)");
+				         .text("Life Expectancy (yrs)");
 
     var yearText = chart.append("text")
 				         .attr("y",  (svgHeight - margin.bottom - 30))
@@ -194,7 +196,7 @@ $(document).ready( function () {
 						"Continent: " + continent + "<br>"
 						+"Country: " + d.country + "<br>"
 						+"Population: " + d.population + "<br>"
-						+"Life Expentancy: " + d.life_exp + "<br>"
+						+"Life Expectancy: " + d.life_exp + "<br>"
 						+ "GDP per Capita: " + "$" + d.income
 						)
 							.style("left", (d3.event.pageX + 20)+ "px")
